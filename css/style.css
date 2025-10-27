@@ -1,0 +1,61 @@
+/* input.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-secondary {
+    @apply flex items-center gap-2 backdrop-blur-[5px] border rounded-lg border-primary h-[50px] px-6 font-semibold text-xl text-primary
+}
+
+.btn-secondary:hover {
+    @apply bg-soft-purple border-heading text-heading
+}
+
+.btn-secondary:hover svg path {
+    fill-opacity: 1;
+}
+
+.btn-secondary.active,
+.btn-secondary:active {
+    @apply bg-white text-pink border-pink
+}
+
+.btn-secondary.active svg path,
+.btn-secondary:active svg path {
+    @apply fill-pink
+}
+
+.btn-secondary.disabled {
+    @apply border-secondary bg-heading/40 text-secondary pointer-events-none
+}
+
+.btn-secondary.disabled svg path {
+    fill-opacity: .6;
+    @apply fill-heading
+}
+
+.header .btn-secondary {
+    @apply gap-1 border-secondary h-10 px-4 text-lg text-secondary
+}
+
+.header .btn-secondary:hover {
+    @apply bg-soft-purple border-heading text-heading
+}
+
+.header .btn-secondary.active,
+.header .btn-secondary:active {
+    @apply text-pink border-pink bg-white
+}
+
+.btn-primary {
+    @apply flex items-center gap-2 border border-pink hover:border-purple bg-pink hover:bg-purple text-white rounded-lg px-6 h-[50px] font-semibold text-xl font-kreadon;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    
+}
+
+.container {
+    @apply max-w-[1180px] mx-auto
+}
