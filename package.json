@@ -2,7 +2,7 @@
   "name": "Project name",
   "version": "1.0.0",
   "scripts": {
-    "dev": "npx tailwindcss -i ./css/style.css -o ./css/output.css --watch"
+    "dev": "tailwindcss -i ./css/style.css -o ./css/output.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
