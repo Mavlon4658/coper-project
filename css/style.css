@@ -53,9 +53,9 @@
 
 .btn-primary:active,
 .btn-primary.active {
-    
+
 }
 
 .container {
-    @apply max-w-[1180px] mx-auto
+    @apply max-w-[1260px] mx-auto md:px-[40px] px-[32px];
 }

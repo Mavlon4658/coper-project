@@ -108,7 +108,7 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.18 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -621,12 +621,29 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-\[5px\] {
+  margin-bottom: 5px;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.size-\[16px\] {
+  width: 16px;
+  height: 16px;
 }
 
 .w-\[1359px\] {
@@ -658,6 +675,10 @@ video {
   flex-direction: column;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -682,16 +703,82 @@ video {
   gap: 1.5rem;
 }
 
+.gap-\[16px\] {
+  gap: 16px;
+}
+
+.gap-\[24px\] {
+  gap: 24px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
 .gap-\[33px\] {
   gap: 33px;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
+}
+
+.gap-\[63px\] {
+  gap: 63px;
+}
+
+.gap-\[64px\] {
+  gap: 64px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-tl-\[40px\] {
+  border-top-left-radius: 40px;
+}
+
+.rounded-tr-\[40px\] {
+  border-top-right-radius: 40px;
+}
+
+.rounded-tl-\[20px\] {
+  border-top-left-radius: 20px;
+}
+
+.rounded-tr-\[20px\] {
+  border-top-right-radius: 20px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-x-0 {
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
 }
 
 .border-b-\[0\.4px\] {
   border-bottom-width: 0.4px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-heading\/10 {
   border-color: rgb(45 38 41 / 0.1);
+}
+
+.border-soft-pink {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 202 228 / var(--tw-border-opacity, 1));
 }
 
 .bg-base {
@@ -703,13 +790,42 @@ video {
   background-color: rgb(249 249 255 / 0.9);
 }
 
+.bg-heading {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 38 41 / var(--tw-bg-opacity, 1));
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
+.pb-\[64px\] {
+  padding-bottom: 64px;
+}
+
 .pb-\[695px\] {
   padding-bottom: 695px;
+}
+
+.pt-\[24px\] {
+  padding-top: 24px;
+}
+
+.pt-\[64px\] {
+  padding-top: 64px;
+}
+
+.pb-\[40px\] {
+  padding-bottom: 40px;
+}
+
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[30px\] {
+  padding-top: 30px;
 }
 
 .text-center {
@@ -729,6 +845,14 @@ video {
   line-height: 2rem;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-\[32px\] {
   font-size: 32px;
 }
@@ -737,12 +861,21 @@ video {
   font-size: 64px;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -757,6 +890,14 @@ video {
   line-height: 140%;
 }
 
+.leading-\[20px\] {
+  line-height: 20px;
+}
+
+.leading-\[24px\] {
+  line-height: 24px;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -766,9 +907,32 @@ video {
   color: rgb(62 44 53 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#9795B5\] {
+  --tw-text-opacity: 1;
+  color: rgb(151 149 181 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#FEFDFE99\] {
+  color: #FEFDFE99;
+}
+
+.text-base {
+  --tw-text-opacity: 1;
+  color: rgb(249 249 255 / var(--tw-text-opacity, 1));
+}
+
 .text-pink {
   --tw-text-opacity: 1;
   color: rgb(255 17 131 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(254 253 254 / var(--tw-text-opacity, 1));
 }
 
 .btn-secondary {
@@ -786,7 +950,6 @@ video {
   font-weight: 600;
   color: rgba(45, 38, 41, 0.8);
   --tw-backdrop-blur: blur(5px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
@@ -895,5 +1058,38 @@ video {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1180px;
+  max-width: 1260px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:rounded-tl-\[40px\] {
+    border-top-left-radius: 40px;
+  }
+
+  .md\:rounded-tr-\[40px\] {
+    border-top-right-radius: 40px;
+  }
+
+  .md\:pb-\[64px\] {
+    padding-bottom: 64px;
+  }
+
+  .md\:pt-\[24px\] {
+    padding-top: 24px;
+  }
 }
