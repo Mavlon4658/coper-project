@@ -658,6 +658,14 @@ video {
   margin-bottom: 16px;
 }
 
+.mb-\[32px\] {
+  margin-bottom: 32px;
+}
+
+.mt-\[32px\] {
+  margin-top: 32px;
+}
+
 .block {
   display: block;
 }
@@ -691,6 +699,22 @@ video {
   height: 100%;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[45px\] {
+  height: 45px;
+}
+
 .w-\[1359px\] {
   width: 1359px;
 }
@@ -716,6 +740,14 @@ video {
   width: 66px;
 }
 
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[120px\] {
+  width: 120px;
+}
+
 .min-w-\[1359px\] {
   min-width: 1359px;
 }
@@ -738,6 +770,10 @@ video {
 
 .max-w-\[609px\] {
   max-width: 609px;
+}
+
+.max-w-\[500\] {
+  max-width: 500;
 }
 
 .flex-shrink-0 {
@@ -939,6 +975,11 @@ video {
 .bg-soft-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(244 243 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 78 164 / var(--tw-bg-opacity, 1));
 }
 
 .object-contain {
@@ -1165,6 +1206,16 @@ video {
   color: ;
 }
 
+.text-\[\#F0F2FB\] {
+  --tw-text-opacity: 1;
+  color: rgb(240 242 251 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#F9F9FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(249 249 255 / var(--tw-text-opacity, 1));
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1335,8 +1386,24 @@ video {
     margin-bottom: 16px;
   }
 
+  .md\:mt-\[16px\] {
+    margin-top: 16px;
+  }
+
   .md\:w-\[400px\] {
     width: 400px;
+  }
+
+  .md\:w-\[460px\] {
+    width: 460px;
+  }
+
+  .md\:w-\[260px\] {
+    width: 260px;
+  }
+
+  .md\:w-\[360px\] {
+    width: 360px;
   }
 
   .md\:grid-cols-2 {
@@ -1400,6 +1467,10 @@ video {
     display: none;
   }
 
+  .lg\:h-\[50px\] {
+    height: 50px;
+  }
+
   .lg\:w-\[180px\] {
     width: 180px;
   }
@@ -1422,6 +1493,22 @@ video {
 
   .lg\:w-\[155px\] {
     width: 155px;
+  }
+
+  .lg\:w-\[460px\] {
+    width: 460px;
+  }
+
+  .lg\:w-\[220px\] {
+    width: 220px;
+  }
+
+  .lg\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .lg\:w-\[230px\] {
+    width: 230px;
   }
 
   .lg\:items-start {
@@ -1451,6 +1538,10 @@ video {
 
   .lg\:text-\[42px\] {
     font-size: 42px;
+  }
+
+  .lg\:text-\[20px\] {
+    font-size: 20px;
   }
 }
 
