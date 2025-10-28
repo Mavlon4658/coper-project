@@ -14,18 +14,18 @@
     <!-- Syle CSS -->
     <link rel="stylesheet" href="./css/output.css">
 </head>
-<body class="font-future-pt bg-base">
+<body class="font-future-pt bg-cBase">
     
-    <div class="wrapper">
+    <div class="wrapper w-full min-h-[100svh] overflow-hidden">
 
         <!-- Header -->
-        <header class="header bg-base/90 border-b-[0.4px] border-heading/10">
-            <div class="container flex items-center justify-between py-3">
+        <header class="header bg-cBase/90 border-0 lg:border-b-[0.4px] border-heading/10 relative z-[2]">
+            <div class="container border-b-[0.4px] lg:border-0 border-heading/10 rounded-lg flex items-center justify-between px-[10px] lg:px-1 py-3">
                 <div class="flex items-center gap-6">
                     <a href="/" class="header-logo">
                         <img src="./assets/images/logo.svg" alt="">
                     </a>
-                    <ul class="flex items-center gap-[33px]">
+                    <ul class="hidden lg:flex items-center gap-[33px]">
                         <li>
                             <a href="#">How It Works</a>
                         </li>
@@ -37,30 +37,113 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-3 lg:gap-4">
                     <a href="#" class="btn-secondary">
-                        <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="lg:inline hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17 9V7C17 5.67392 16.4732 4.40215 15.5355 3.46447C14.5979 2.52678 13.3261 2 12 2C10.6739 2 9.40215 2.52678 8.46447 3.46447C7.52678 4.40215 7 5.67392 7 7V9C6.20435 9 5.44129 9.31607 4.87868 9.87868C4.31607 10.4413 4 11.2044 4 12V19C4 19.7956 4.31607 20.5587 4.87868 21.1213C5.44129 21.6839 6.20435 22 7 22H17C17.7956 22 18.5587 21.6839 19.1213 21.1213C19.6839 20.5587 20 19.7956 20 19V12C20 11.2044 19.6839 10.4413 19.1213 9.87868C18.5587 9.31607 17.7956 9 17 9ZM9 7C9 6.20435 9.31607 5.44129 9.87868 4.87868C10.4413 4.31607 11.2044 4 12 4C12.7956 4 13.5587 4.31607 14.1213 4.87868C14.6839 5.44129 15 6.20435 15 7V9H9V7ZM18 19C18 19.2652 17.8946 19.5196 17.7071 19.7071C17.5196 19.8946 17.2652 20 17 20H7C6.73478 20 6.48043 19.8946 6.29289 19.7071C6.10536 19.5196 6 19.2652 6 19V12C6 11.7348 6.10536 11.4804 6.29289 11.2929C6.48043 11.1054 6.73478 11 7 11H17C17.2652 11 17.5196 11.1054 17.7071 11.2929C17.8946 11.4804 18 11.7348 18 12V19Z" fill="#2D2629" fill-opacity="0.6" />
                         </svg>
-                        <span>Log In</span>
+                        <svg class="lg:hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 0C8.01109 0 7.04439 0.293245 6.22215 0.842652C5.3999 1.39206 4.75904 2.17295 4.3806 3.08658C4.00216 4.00021 3.90315 5.00555 4.09607 5.97545C4.289 6.94536 4.7652 7.83627 5.46447 8.53553C6.16373 9.2348 7.05464 9.711 8.02455 9.90393C8.99445 10.0969 9.99979 9.99784 10.9134 9.6194C11.827 9.24096 12.6079 8.6001 13.1573 7.77785C13.7068 6.95561 14 5.98891 14 5C14 3.67392 13.4732 2.40215 12.5355 1.46447C11.5979 0.526784 10.3261 0 9 0ZM9 8C8.40666 8 7.82664 7.82405 7.33329 7.49441C6.83994 7.16476 6.45542 6.69623 6.22836 6.14805C6.0013 5.59987 5.94189 4.99667 6.05764 4.41473C6.1734 3.83279 6.45912 3.29824 6.87868 2.87868C7.29824 2.45912 7.83279 2.1734 8.41473 2.05764C8.99667 1.94189 9.59987 2.0013 10.1481 2.22836C10.6962 2.45542 11.1648 2.83994 11.4944 3.33329C11.8241 3.82664 12 4.40666 12 5C12 5.79565 11.6839 6.55871 11.1213 7.12132C10.5587 7.68393 9.79565 8 9 8ZM18 19V18C18 16.1435 17.2625 14.363 15.9497 13.0503C14.637 11.7375 12.8565 11 11 11H7C5.14348 11 3.36301 11.7375 2.05025 13.0503C0.737498 14.363 0 16.1435 0 18V19H2V18C2 16.6739 2.52678 15.4021 3.46447 14.4645C4.40215 13.5268 5.67392 13 7 13H11C12.3261 13 13.5979 13.5268 14.5355 14.4645C15.4732 15.4021 16 16.6739 16 18V19H18Z" fill="#2D2629" fill-opacity="0.6" />
+                        </svg>
+                        <span class="hidden lg:inline">Log In</span>
                     </a>
+                    <a href="#" class="btn-primary">Sign Up</a>
+                    <button class="flex lg:hidden items-center justify-center bars">
+                        <img src="./assets/images/bars.svg" alt="">
+                    </button>
                 </div>
             </div>
         </header>
         <!-- Header end -->
+
+        <!-- Menu -->
+        <section class="menu fixed top-0 left-0 z-10 w-full h-full hidden lg:!hidden">
+            <div class="menu-bg absolute left-0 top-0 w-full h-full bg-soft-purple/70"></div>
+            <div class="menu-content absolute top-0 right-0 w-[307px] sm:w-[451px] h-full bg-cBase shadow-[-2px_4px_4px_0_rgba(45,38,41,0.1)] px-4 py-6 rounded-[0_0_0_20px] flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between mb-10">
+                        <a href="/" class="flex items-center">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                        <button class="menu-close flex items-center justify-center">
+                            <img src="./assets/images/times-icon.svg" alt="">
+                        </button>
+                    </div>
+                    <ul class="flex flex-col gap-5">
+                        <li>
+                            <a href="#" class="py-2 px-4 text-xl text-secondary hover:text-pink font-medium flex items-center gap-1 leading-[26px] group">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="sm:hidden group-hover:stroke-pink group-hover:stroke-[2px] group-hover:[stroke-opacity:1]" d="M3.74988 1.76953L7.87455 5.99996L3.74988 10.2304" stroke="#2D2629" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 text-xl text-secondary hover:text-pink font-medium flex items-center gap-1 leading-[26px] group">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="sm:hidden group-hover:stroke-pink group-hover:stroke-[2px] group-hover:[stroke-opacity:1]" d="M3.74988 1.76953L7.87455 5.99996L3.74988 10.2304" stroke="#2D2629" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>How It Works</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 text-xl text-secondary hover:text-pink font-medium flex items-center gap-1 leading-[26px] group">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="sm:hidden group-hover:stroke-pink group-hover:stroke-[2px] group-hover:[stroke-opacity:1]" d="M3.74988 1.76953L7.87455 5.99996L3.74988 10.2304" stroke="#2D2629" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-2 px-4 text-xl text-secondary hover:text-pink font-medium flex items-center gap-1 leading-[26px] group">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="sm:hidden group-hover:stroke-pink group-hover:stroke-[2px] group-hover:[stroke-opacity:1]" d="M3.74988 1.76953L7.87455 5.99996L3.74988 10.2304" stroke="#2D2629" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pb-6 px-4 text-base text-secondary leading-[112%]">
+                    <div class="flex items-center mb-8 gap-4">
+                        <a href="#" class="btn-secondary !h-[40px] !px-4 !text-lg">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 9V7C17 5.67392 16.4732 4.40215 15.5355 3.46447C14.5979 2.52678 13.3261 2 12 2C10.6739 2 9.40215 2.52678 8.46447 3.46447C7.52678 4.40215 7 5.67392 7 7V9C6.20435 9 5.44129 9.31607 4.87868 9.87868C4.31607 10.4413 4 11.2044 4 12V19C4 19.7956 4.31607 20.5587 4.87868 21.1213C5.44129 21.6839 6.20435 22 7 22H17C17.7956 22 18.5587 21.6839 19.1213 21.1213C19.6839 20.5587 20 19.7956 20 19V12C20 11.2044 19.6839 10.4413 19.1213 9.87868C18.5587 9.31607 17.7956 9 17 9ZM9 7C9 6.20435 9.31607 5.44129 9.87868 4.87868C10.4413 4.31607 11.2044 4 12 4C12.7956 4 13.5587 4.31607 14.1213 4.87868C14.6839 5.44129 15 6.20435 15 7V9H9V7ZM18 19C18 19.2652 17.8946 19.5196 17.7071 19.7071C17.5196 19.8946 17.2652 20 17 20H7C6.73478 20 6.48043 19.8946 6.29289 19.7071C6.10536 19.5196 6 19.2652 6 19V12C6 11.7348 6.10536 11.4804 6.29289 11.2929C6.48043 11.1054 6.73478 11 7 11H17C17.2652 11 17.5196 11.1054 17.7071 11.2929C17.8946 11.4804 18 11.7348 18 12V19Z" fill="#2D2629" fill-opacity="0.6" />
+                            </svg>
+                            <span>Log In</span>
+                        </a>
+                        <a href="#" class="btn-primary !text-lg !py-2 !px-6 !h-[39px]">Sign Up</a>
+                    </div>
+                    <div class="w-[252px] sm:w-[338px] h-[1px] shrink-0 bg-soft-pink/40"></div>
+                    <ul class="my-3 flex items-center gap-4">
+                        <li>
+                            <a href="#" class="text-base leading-[125%] text-secondary">Privacy Policy</a>
+                        </li>
+                        <li class="shrink-0">
+                            <span class="text-base leading-[125%] text-secondary">|</span>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base leading-[125%] text-secondary">Terms & Condition</a>
+                        </li>
+                    </ul>
+                    <p class="">Copyright © 2025 Coper.Finance <br> All Rights Reserved </p>
+                </div>
+            </div>
+        </section>
+        <!-- Menu end -->
     
         <main>
 
             <!-- Home -->
-            <section class="home mt-4">
-                <div class="container pb-[695px] relative z-[1]">
-                    <div class="flex flex-col items-center gap-10 max-w-[609px] mx-auto">
+            <section class="home mt-0 mb-6 sm:mb-8 lg:my-4 w-full overflow-hidden">
+                <div class="container pt-[88px] sm:pt-16 lg:pt-0 pb-[409px] sm:pb-[478px] lg:pb-[755px] relative z-[1]">
+                    <div class="flex flex-col items-center lg:gap-10 max-w-[382px] lg:max-w-[609px] mx-auto">
                         <div>
-                            <div class="mb-6 text-center text-pink font-light text-2xl tracking-widest uppercase">The world’s first</div>
-                            <h1 class="max-w-[564px] font-kreadon font-bold text-[64px] leading-[140%] text-center text-[#3e2c35]">PTP Impact Lending Platform</h1>
+                            <div class="mb-6 text-center text-pink font-light !text-base lg:text-2xl tracking-widest uppercase">The world’s first</div>
+                            <h1 class="max-w-[564px] mb-6 lg:mb-0 font-kreadon font-bold text-[42px] lgtext-[64px] leading-[140%] text-center text-[#3e2c35]">PTP Impact Lending Platform</h1>
                         </div>
-                        <p class="max-w-[600px] font-normal text-[32px] text-center text-[#3e2c35]">Transparent and accessible financial solutions for everyone</p>
-                        <div class="flex justify-center items-center gap-10">
+                        <p class="max-w-[254px] lg:max-w-[600px] font-normal text-2xl lg:text-[32px] text-center text-[#3e2c35] mb-10 lg:mb-0">Transparent and accessible financial solutions <br class="lg:hidden"> for everyone</p>
+                        <div class="flex justify-center items-center flex-col sm:flex-row gap-6 lg:gap-10">
                             <a href="#" class="btn-primary">
                                 <span>Get Started</span>
                                 <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,10 +153,170 @@
                             <a href="#" class="btn-secondary">How It Works</a>
                         </div>
                     </div>
-                    <img src="./assets/images/home-bg.svg" alt="" class="absolute z-[-1] bottom-0 left-1/2 -translate-x-1/2 w-[1359px] min-w-[1359px]">
+                    <img src="./assets/images/human-cooperation.svg" alt="" class="absolute z-[-1] -bottom-[100px] sm:-bottom-[107px] lg:-bottom-[190px] left-1/2 -translate-x-1/2 w-[729px] lg:w-[1359px] min-w-[729px] lg:min-w-[1359px] opacity-60">
                 </div>
             </section>
             <!-- Home end -->
+
+            <!-- Help -->
+            <section class="help -mb-2 lg:mb-4 relative z-[3]">
+                <div class="container flex flex-col sm:flex-row items-center lg:items-start justify-between gap-10 px-[10px] sm:px-5 lg:px-10 pt-16 pb-[42px] lg:py-20 bg-white rounded-[20px] lg:rounded-3xl">
+                    <div class="max-w-[364px] lg:max-w-max flex lg:block flex-col items-center">
+                        <div class="mb-4 text-center lg:text-left text-pink font-light !text-base lg:text-2xl tracking-widest uppercase">be cooperative</div>
+                        <h2 class="font-kreadon font-semibold text-center lg:text-left text-[32px] lg:text-[42px] leading-[140%] capitalize text-heading mb-6 lg:mb-8">
+                            We assist people <br>
+                            in challenging <br>
+                            financial situations
+                        </h2>
+                        <p class="max-w-[255px] lg:max-w-[431px] text-xl lg:text-2xl text-primary mx-auto mb-6 lg:mb-8 text-center lg:text-left">
+                            Coper P2P fintech project means <b class="inline font-semibold text-pink">co-operation</b> between people all over the planet
+                        </p>
+                        <a href="#" class="inline-flex items-center gap-1 py-2 px-4 lg:px-0 text-base lg:text-xl text-secondary">
+                            <span>More about us</span>
+                            <svg class="w-3 lg:w-4" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 2.35938L10.4996 7.99995L5 13.6405" stroke="#2D2629" stroke-opacity="0.6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <img src="./assets/images/help-card.svg" alt="" class="main-img w-[350px] sm:w-[273px] lg:w-[400px] xl:w-[560px] shrink-0">
+                </div>
+            </section>
+            <!-- Help end -->
+
+            <!-- Benefit -->
+            <section class="benefit -mb-2 lg:mb-4 relative-[2]">
+                <div class="container bg-soft-blue rounded-3xl py-16 lg:py-20 px-[10px] lg:px-10">
+                    <div class="mb-4 text-center lg:text-left text-pink font-light !text-base lg:text-2xl tracking-widest uppercase">our key benefits</div>
+                    <h2 class="font-kreadon font-semibold text-center lg:text-left text-[32px] lg:text-[42px] leading-[140%] capitalize text-heading mb-[54px] lg:mb-16">What makes <span class="text-pink">Coper</span> different</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[54px] sm:gap-y-[30.5px] sm:gap-x-10 lg:gap-[54px] mb-[70.5px] lg:mb-16">
+                        <div class="flex lg:block flex-col items-center">
+                            <img src="./assets/images/benefit-icon-1.svg" alt="" class="mb-5">
+                            <h3 class="max-w-[340px] sm:max-w-max mb-4 font-medium text-2xl lg:text-[32px] text-heading text-center lg:text-left">Not just about monetary profit — it's about <span class="text-pink">human cooperation</span></h3>
+                            <p class="text-xl lg:text-2xl text-primary max-w-[335px] lg:max-w-max text-center lg:text-left">Just imagine: with your investments, you can change someone 's life, business, and contribute to truly significant endeavours</p>
+                        </div>
+                        <div class="flex lg:block flex-col items-center">
+                            <img src="./assets/images/benefit-icon-2.svg" alt="" class="mb-5">
+                            <h3 class="max-w-[340px] sm:max-w-max mb-4 font-medium text-2xl lg:text-[32px] text-heading text-center lg:text-left"><span class="text-pink">Invest with us:</span> Empower change, support ventures</h3>
+                            <p class="text-xl lg:text-2xl text-primary max-w-[335px] lg:max-w-max text-center lg:text-left">There are no limits, regardless of race, skin colour, location, or socioeconomic status. <span class="text-pink font-medium">Coper is a place for everyone</span></p>
+                        </div>
+                        <div class="flex lg:block flex-col items-center">
+                            <img src="./assets/images/benefit-icon-3.svg" alt="" class="mb-5">
+                            <h3 class="max-w-[340px] sm:max-w-max mb-4 font-medium text-2xl lg:text-[32px] text-heading text-center lg:text-left">Your reputation: the <span class="text-pink">currency of success</span> in Coper</h3>
+                            <p class="text-xl lg:text-2xl text-primary max-w-[335px] lg:max-w-max text-center lg:text-left">No longer do you need to feel ashamed to ask your loved ones for money before receiving your salary</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <a href="#" class="btn-primary">
+                            <span>Explore the Platform</span>
+                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.25049 2.35938L9.75005 7.99995L4.25049 13.6405" stroke="#FFFAFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Benefit end -->
+
+            <!-- Works -->
+            <section class="works mb-8 lg:mb-4">
+                <div class="container overflow-hidden bg-soft-purple px-[10px] lg:px-10 pt-16 pb-[342px] lg:py-16 lg:pt-20 lg:pb-[85.5px] rounded-[20px] lg:rounded-3xl grid grid-cols-1 sm:grid-cols-2 lg:flex items-start justify-between gap-10 lg:gap-0 relative z-[1]">
+                    <div>
+                        <div class="mb-4 text-center lg:text-left text-pink font-light !text-base lg:text-2xl tracking-widest uppercase">hOW IT WORKS</div>
+                        <h2 class="font-kreadon font-semibold text-center lg:text-left text-[32px] lg:text-[42px] leading-[140%] capitalize text-heading">The Process <br> in 5 Easy Steps</h2>
+                    </div>
+                    <div>
+                        <ul class="lg:max-w-[534px] w-full flex flex-col gap-6 lg:gap-8">
+                            <li class="relative pl-[43px] min-h-[104px] lg:min-h-max">
+                                <div class="font-kreadon text-[80px] text-center font-bold text-soft-pink/40 w-[123px] absolute top-0 left-0">01</div>
+                                <h3 class="text-xl lg:text-2xl font-medium text-heading mb-2">Sign Up & Verify Your Profile</h3>
+                                <p class="text-xl lg:text-2xl text-primary max-w-[400px]">Create your account and complete verification</p>
+                            </li>
+                            <li class="relative pl-[43px] min-h-[104px] lg:min-h-max ml:ml-[91px]">
+                                <div class="font-kreadon text-[80px] text-center font-bold text-soft-pink/40 w-[123px] absolute top-0 left-0">02</div>
+                                <h3 class="text-xl lg:text-2xl font-medium text-heading mb-2">Submit Requests or Create Offers</h3>
+                                <p class="text-xl lg:text-2xl text-primary max-w-[400px]">Borrowers submit loan requests; lenders create financial offers</p>
+                            </li>
+                            <li class="relative pl-[43px] min-h-[104px] lg:min-h-max">
+                                <div class="font-kreadon text-[80px] text-center font-bold text-soft-pink/40 w-[123px] absolute top-0 left-0">03</div>
+                                <h3 class="text-xl lg:text-2xl font-medium text-heading mb-2">Match Requests & Offers</h3>
+                                <p class="text-xl lg:text-2xl text-primary max-w-[400px]">Moderator reviews and connects borrowers with lenders</p>
+                            </li>
+                            <li class="relative pl-[43px] min-h-[104px] lg:min-h-max ml:ml-[91px]">
+                                <div class="font-kreadon text-[80px] text-center font-bold text-soft-pink/40 w-[123px] absolute top-0 left-0">04</div>
+                                <h3 class="text-xl lg:text-2xl font-medium text-heading mb-2">Pay Commission & Sign Contract </h3>
+                                <p class="text-xl lg:text-2xl text-primary max-w-[400px]">Complete the small platform fee and finalize the agreement</p>
+                            </li>
+                            <li class="relative pl-[43px] min-h-[104px] lg:min-h-max">
+                                <div class="font-kreadon text-[80px] text-center font-bold text-soft-pink/40 w-[123px] absolute top-0 left-0">05</div>
+                                <h3 class="text-xl lg:text-2xl font-medium text-heading mb-2">Track & Enjoy</h3>
+                                <p class="text-xl lg:text-2xl text-primary max-w-[400px]">CrMonitor your loans or investments. <br> <span class="text-pink font-semibold">Let Coper grow your money!</span></p>
+                            </li>
+                        </ul>
+                        <div class="flex items-center justify-center pt-8">
+                            <a href="#" class="btn-primary">
+                                <span>Explore the Platform</span>
+                                <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.25049 2.35938L9.75005 7.99995L4.25049 13.6405" stroke="#FFFAFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./assets/images/work-bg.svg" alt="" class="absolute min-w-[506px] w-[506px] lg:w-auto left-1/2 sm:-left-8 lg:left-10 -translate-x-1/2 sm:translate-x-0 bottom-0 sm:bottom-20 z-[-1]">
+                </div>
+            </section>
+            <!-- Works end -->
+
+            <!-- About -->
+            <section class="about mb-8 lg:mb-16">
+                <div class="container pt-16 pb-[42px] lg:py-20 px-[10px] lg:px-[100px] bg-purple rounded-[20px] lg:rounded-3xl relative z-[1] overflow-hidden flex lg:block flex-col items-center text-center lg:text-left">
+                    <img src="./assets/images/about-bg.svg" alt="" class="absolute z-[-1] w-[471px] lg:w-auto -top-[61px] lg:-top-[116px] -left-[84px] lg:-left-[71px]">
+                    <div class="font-light text-base lg:text-2xl leading-[21px] lg:leading-[31px] tracking-widest uppercase text-cBase mb-4">aBOUT US</div>
+                    <h2 class="text-[32px] lg:text-[42px] leading-[42px] lg:leading-[55px] capitalize text-cBase font-semibold mb-4 lg:mb-10">Be <span class="text-pink">cooper</span>ative. <br>Be human</h2>
+                    <p class="max-w-[335px] lg:max-w-[391px] text-xl lg:text-2xl leading-[26px] lg:leading-[31px] text-cBase">Coper.Finance is a global peer-to-peer lending platform built on trust</p>
+                </div>
+            </section>
+            <!-- About end -->
+
+            <!-- About content -->
+            <section class="about-content mb-8 lg:mb-16">
+                <div class="container grid grid-cols-1 lg:grid-cols-2 gap-8 px-6">
+                    <ul class="flex flex-col gap-8 lg:gap-10">
+                        <li class="text-xl lg:text-2xl text-primary">In today’s world, connection is everything — yet when it comes to money, people are often left alone. Coper brings back the human side of finance. It’s <span class="text-pink font-medium">a place where anyone, anywhere, can borrow or lend directly,</span> without banks, bureaucracy, or judgment.</li>
+                        <li class="text-xl lg:text-2xl text-primary">Coper was created by a team of promising developers forced to leave Russia due to their disagreement with the war unleashed by the Russian government in Ukraine. Facing challenges in finding a new home and bureaucratic hurdles in settling elsewhere, Coper emerged from the collaboration and results of adapting to a new life beyond their homeland. That’s why we designed Coper not as another fintech app, but as a <span class="text-pink">bridge between people</span> — reliable, safe, and borderless.</li>
+                    </ul>
+                    <div class="flex  flex-wrap lg:flex-col items-center lg:items-start justify-between lg:justify-start gap-8 lg:gap-10">
+                        <div class="flex flex-wrap items-start gap-8 xl:gap-10 order-1">
+                            <div class="flex items-center gap-3 w-[123px] xl:w-auto flex-col xl:flex-row text-center xl:text-left">
+                                <img src="./assets/images/user-1.png" alt="" class="shrink-0 w-[100px] h-[100px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-xl lg:text-2xl leading-[170%] lg:leading-[142%] font-medium text-heading mb-1">John Carter</h3>
+                                    <p class="text-base lg:text-xl leading-[112%] lg:leading-[90%] text-secondary">CEO & Co-Founder</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 w-[123px] xl:w-auto flex-col xl:flex-row text-center xl:text-left">
+                                <img src="./assets/images/user-2.png" alt="" class="shrink-0 w-[100px] h-[100px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-xl lg:text-2xl leading-[170%] lg:leading-[142%] font-medium text-heading mb-1">Joy Carter</h3>
+                                    <p class="text-base lg:text-xl leading-[112%] lg:leading-[90%] text-secondary">Co-Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="flex flex-col gap-8 lg:gap-10 order-2 md:order-3 lg:order-2">
+                            <li class="text-xl lg:text-2xl text-primary"><span class="text-pink font-medium">Our mission is simple: to make financial help accessible</span>, transparent, and human. Whether it’s funding a student’s dream or helping a small business grow, Coper unites people to support one another — safely, fairly, and with purpose.</li>
+                            <li class="text-xl lg:text-2xl text-heading">Transparency and safety are our priorities. We develop strict rules and checks <span class="text-pink font-medium">to ensure safety and transparency</span> for all project participants, minimizing risks and guaranteeing trust.</li>
+                        </ul>
+                        <div class="w-full sm:w-auto flex items-center justify-between sm:justify-center gap-3 sm:gap-[62px] lg:gap-4 order-3 md:order-2 lg:order-3 pl-[10px] sm:pl-0 pr-[10px] lg:pr-0">
+                            <p class="text-center text-xl leading-[170%] font-medium text-heading w-[198px] lg:w-auto shrink-0">
+                                Laureate of the
+                                <span class="block text-2xl">French Tech Tremplin</span> 
+                                program
+                            </p>
+                            <img src="./assets/images/about-logo.svg" alt="" class="shrink-0 w-[124px] h-[124px] object-cover">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About content end -->
 
         </main>
 

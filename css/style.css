@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .btn-secondary {
-    @apply flex items-center gap-2 backdrop-blur-[5px] border rounded-lg border-primary h-[50px] px-6 font-semibold text-xl text-primary
+    @apply flex items-center gap-2 backdrop-blur-[5px] border rounded-lg border-primary h-[45px] lg:h-[50px] px-5 lg:px-6 font-semibold text-base lg:text-xl text-primary
 }
 
 .btn-secondary:hover {
@@ -35,7 +35,7 @@
 }
 
 .header .btn-secondary {
-    @apply gap-1 border-secondary h-10 px-4 text-lg text-secondary
+    @apply gap-1 border-secondary w-7 lg:w-auto h-7 lg:h-10 p-0 lg:px-4 text-base lg:text-lg text-secondary flex items-center justify-center
 }
 
 .header .btn-secondary:hover {
@@ -48,14 +48,18 @@
 }
 
 .btn-primary {
-    @apply flex items-center gap-2 border border-pink hover:border-purple bg-pink hover:bg-purple text-white rounded-lg px-6 h-[50px] font-semibold text-xl font-kreadon;
+    @apply flex items-center gap-1 lg:gap-2 border border-pink hover:border-purple bg-pink hover:bg-purple text-white rounded-lg px-6 h-[46px] lg:h-[50px] font-semibold text-xl font-kreadon;
 }
 
 .btn-primary:active,
 .btn-primary.active {
-    
+    @apply border-pink
+}
+
+.header .btn-primary {
+    @apply h-[29px] lg:h-[39px] text-base lg:text-lg px-2 lg:px-6
 }
 
 .container {
-    @apply max-w-[1180px] mx-auto
+    @apply max-w-[1180px] mx-auto w-[calc(100%_-_20px)] sm:w-[calc(100%_-_40px)]
 }
