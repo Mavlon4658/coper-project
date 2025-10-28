@@ -42,5 +42,25 @@ accordions.forEach((header) => {
         }
     });
 });
-
 // accordion
+
+// comment
+    var swiper = new Swiper(".commentSwiper", {
+    slidesPerView: 1.3,
+    spaceBetween: 24,
+    breakpoints: {
+        640: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+        },
+        768: {
+            slidesPerView: 2.6,
+            spaceBetween: 24,
+        },
+        1024: {
+            slidesPerView: 2.8,
+            spaceBetween: 32,
+        },
+    },
+});
+// comment
